@@ -1,0 +1,143 @@
+form {
+    margin-left: .35em;
+}
+
+.formitem {
+    border-bottom: .04rem solid rgb(235, 235, 235);
+    padding-top: .35rem;
+    padding-bottom: .28rem;
+    font-size: .35rem;
+}
+
+.formitem>* {
+    display: block;
+}
+
+.fistmargin {
+    margin-top: 1.45rem;
+}
+label {
+    margin-bottom: .35rem;
+}
+input {
+    border: none;
+    outline: none;
+    font-size: .35rem;
+    width: 8.8rem;
+}
+
+table {
+    border: .04rem solid black;
+    /* border-spacing: 0; */
+    border-collapse: collapse;
+    border-radius: .15rem;
+    width: calc(2.2rem * 4);
+    margin-left: .15rem;
+}
+
+table th, table td {
+    width: 2.2rem;
+    height: .5rem;
+}
+
+/*table border start*/
+
+td, th {
+    border-right: .04rem solid black;
+}
+
+td {
+    border-top: .04rem solid black;
+}
+
+td:last-child, th:last-child {
+    border-right-color: transparent;
+}
+
+/*table border end*/
+
+table th {
+    font-size: .3rem;
+    font-weight: bold;
+}
+
+textarea {
+    width: 8.8rem;
+    border: none;
+    outline: none;
+    margin-top: .6rem;
+}
+
+span {
+    color: red;
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(178, 178, 178);
+}
+
+/* 使用webkit内核的浏览器 */
+
+input:-moz-placeholder {
+    color: rgb(178, 178, 178);
+}
+
+/* Firefox版本4-18 */
+
+input::-moz-placeholder {
+    color: rgb(178, 178, 178);
+}
+
+/* Firefox版本19+ */
+
+input:-ms-input-placeholder {
+    color: rgb(178, 178, 178);
+}
+
+/* IE浏览器 */
+
+textarea::-webkit-input-placeholder {
+    color: rgb(178, 178, 178);
+}
+
+/* 使用webkit内核的浏览器 */
+
+textarea:-moz-placeholder {
+    color: rgb(178, 178, 178);
+}
+
+/* Firefox版本4-18 */
+
+textarea::-moz-placeholder {
+    color: rgb(178, 178, 178);
+}
+
+/* Firefox版本19+ */
+
+textarea:-ms-input-placeholder {
+    color: rgb(178, 178, 178);
+}
+
+input[type='submit'] {
+    color: white;
+    font-size: .34rem;
+    width: 9rem;
+    height: .8rem;
+    background-color: rgb(110, 150, 188);
+    margin-left: .15rem;
+    margin-top: .19rem;
+    display: block;
+}
+.select {
+    width: 9rem;
+    height: .75rem;
+    border: .04rem solid rgb(230, 230, 230);
+    text-align: center;
+    font-size: .34rem;
+    line-height: .75rem;
+    color: black;
+}
+.select i {
+    font-size: .13rem;
+    margin-left: .2rem;
+}

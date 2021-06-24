@@ -1,0 +1,43 @@
+/* 必需的样式 */
+.pickContainer {  
+    height: 5rem;
+    position: relative;
+}
+.pickfloat {
+    width: 3.33rem;
+    float: left;
+}
+.scroll_ul {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 999;
+    scroll-snap-type: y proximity;
+    background-color: rgb(226, 222, 223);
+}
+.scroll_li {
+    width: 100%;
+    /* li的高度 */
+    height: .9rem;
+    text-align: center;
+    line-height: .9rem;
+    font-size: .35rem;
+    scroll-snap-align: center;
+}
+.pickContainer::after {
+    content:"";
+    display: block;
+    width: 100%;
+    /* 伪类的高度需要和li的高度一致 */
+    height: .9rem;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(195, 195, 195);
+    border-bottom: 1px solid rgb(195, 195, 195);
+    position: absolute;
+    bottom: 2.05rem;
+    z-index: 1;
+}
+.scroll_space{
+    height: 2.05rem;
+}
+
