@@ -136,6 +136,7 @@ input[type='submit'] {
     font-size: .34rem;
     line-height: .75rem;
     color: black;
+    margin-left: .15rem;
 }
 .select i {
     font-size: .13rem;

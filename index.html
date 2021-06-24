@@ -27,7 +27,7 @@
         </div>
         <div class="formitem">
             <label><span>*</span>填表日期</label>
-            <div class="select">请选择<i class="iconfont icon-xiala"></i></div>
+            <div class="select" onclick="datepickShow()">请选择<i class="iconfont icon-xiala"></i></div>
         </div>
         <div class="formitem">
             <label><span>*</span>姓名</label>
@@ -35,7 +35,7 @@
         </div>
         <div class="formitem">
             <label><span>*</span>出生日期</label>
-            <div class="select">请选择<i class="iconfont icon-xiala"></i></div>
+            <div class="select" onclick="datepickShow()">请选择<i class="iconfont icon-xiala"></i></div>
         </div>
         <div class="formitem">
             <label><span>*</span>民族</label>
@@ -47,7 +47,7 @@
         </div>
         <div class="formitem">
             <label><span>*</span>婚否</label>
-            <div class="select">请选择<i class="iconfont icon-xiala"></i></div>
+            <div class="select" onclick="marrypickShow()">请选择<i class="iconfont icon-xiala"></i></div>
         </div>
         <div class="formitem">
             <label><span>*</span>健康状况</label>
@@ -79,7 +79,7 @@
         </div>
         <div class="formitem">
             <label><span>*</span>预计到岗时间</label>
-            <div class="select">请选择<i class="iconfont icon-xiala"></i></div>
+            <div class="select" onclick="datepickShow()">请选择<i class="iconfont icon-xiala"></i></div>
         </div>
         <div class="formitem">
             <label><span>*</span>期望薪资</label>
@@ -167,7 +167,7 @@
     </form>
     <div class="datepick">
         <div class="button">
-            <button>取消</button><button>确定</button>
+            <button onclick="datepickHide()">取消</button><button onclick="datepickHide()">确定</button>
         </div>
         <div class="floatfix">
             <h5 class="h5float">年</h5>
@@ -272,7 +272,7 @@
 
     <div class="marrypick">
         <div class="button">
-            <button>取消</button><button>确定</button>
+            <button onclick="marrypickHide()">取消</button><button onclick="marrypickHide()">确定</button>
         </div>
         <h5>婚否</h5>
         <div id="marryContainer" class="pickContainer">
@@ -284,12 +284,11 @@
             </ul>
         </div>
     </div>
-    <div id="chosed_box" class="chosed">
-    </div>
+    <div id="chosed_box" class="chosed" onclick="allHide()"></div>
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/timePicker.js"></script>
     <script src="./js/pick.js"></script>
     <script src="./js/rem.js"></script>
+    <script src="./js/click.js"></script>
 </body>
-
 </html>
