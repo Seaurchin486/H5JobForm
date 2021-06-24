@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./css/marrypick.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_2085790_fr640pyzjv8.css">
 </head>
-
 <body>
     <header>
         <h1>杭州方大丝绸有限公司</h1>
@@ -165,6 +164,9 @@
         </div>
         <input type="submit" value="提交" />
     </form>
+
+
+    <div id="chosed_box" onclick="allHide()"></div>
     <div class="datepick">
         <div class="button">
             <button onclick="datepickHide()">取消</button><button onclick="datepickHide()">确定</button>
@@ -268,8 +270,7 @@
                 </ul>
             </div>
         </div>
-    </div>
-
+    </div> 
     <div class="marrypick">
         <div class="button">
             <button onclick="marrypickHide()">取消</button><button onclick="marrypickHide()">确定</button>
@@ -277,18 +278,17 @@
         <h5>婚否</h5>
         <div id="marryContainer" class="pickContainer">
             <ul id="marry_ul" class="scroll_ul">
-                <li class="scroll_space"></li>
+                <li class="scroll_space">---</li>
                 <li class="scroll_li">已婚</li>
                 <li class="scroll_li">未婚</li>
-                <li class="scroll_space"></li>
+                <li class="scroll_space">---</li>
             </ul>
         </div>
     </div>
-    <div id="chosed_box" class="chosed" onclick="allHide()"></div>
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/timePicker.js"></script>
-    <script src="./js/pick.js"></script>
+    <script type="text/javascript" src="./js/Picker.js"></script>
     <script src="./js/rem.js"></script>
+    <script src="./js/pickConfig.js"></script>
     <script src="./js/click.js"></script>
 </body>
 </html>

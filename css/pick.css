@@ -28,14 +28,19 @@
     content:"";
     display: block;
     width: 100%;
-    /* 伪类的高度需要和li的高度一致 */
-    height: .9rem;
-    box-sizing: border-box;
+    height: 0;
     border-top: 1px solid rgb(195, 195, 195);
-    border-bottom: 1px solid rgb(195, 195, 195);
     position: absolute;
     bottom: 2.05rem;
-    z-index: 1;
+}
+.pickContainer::before {
+    content:"";
+    display: block;
+    width: 100%;
+    height: 0;
+    border-top: 1px solid rgb(195, 195, 195);
+    position: absolute;
+    top: 2.05rem;
 }
 .scroll_space{
     height: 2.05rem;

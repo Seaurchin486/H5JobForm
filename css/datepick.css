@@ -3,6 +3,11 @@
 }
 #chosed_box {
     display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
 }
 .button {
     background-color: rgb(242, 238, 239);
@@ -11,6 +16,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
+    border-bottom: .02rem solid rgb(220, 220, 220);
+    box-shadow: 0 .08rem .08rem gray;
 }
 button {
     width: 1.2rem;
@@ -30,7 +37,6 @@ button:last-child {
     position: fixed;
     bottom: 0;
     box-shadow: 0 0 .25rem rgb(164, 164, 164);
-    z-index: 10;
 }
 
 h5 {
@@ -44,13 +50,4 @@ h5 {
 .h5float {
     width: 3.33rem;
     float: left;
-}
-
-.chosed {
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    z-index: 5;
 }
